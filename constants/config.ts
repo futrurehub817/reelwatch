@@ -1,5 +1,5 @@
 export const CONFIG = {
-  SERVER_IP: "reelwatch.adelelawady.org",
+  SERVER_IP: "reelwatch-server.onrender.com",
   SERVER_PORT: 443,
 
   START_URL: "https://www.instagram.com/reels/DWEzH45guQJ/",
