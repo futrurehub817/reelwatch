@@ -7,7 +7,7 @@ export const CONFIG = {
   REQUIRE_LOGIN: false, // if true, will check cookies for logged-in status and block access if not logged in
 
   // ─── DEV FLAGS ───────────────────────────────────────────
-  DEV_MODE: true,
+  DEV_MODE: false,
   DEV_DEFAULT_ROOM: "room1",
   DEV_USERNAME: "devuser",
 } as const;
