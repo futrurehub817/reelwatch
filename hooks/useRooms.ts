@@ -40,8 +40,11 @@ export function useRooms({
 
     try {
       const protocol = CONFIG.SERVER_PORT === 443 ? "wss" : "ws";
+      // Only append port if it's NOT the default secure port (443)
+      const portPart =
+        CONFIG.SERVER_PORT === 443 ? "" : `:${CONFIG.SERVER_PORT}`;
       const ws = new WebSocket(
-        `${protocol}://${CONFIG.SERVER_IP}:${CONFIG.SERVER_PORT}`,
+        `${protocol}://${CONFIG.SERVER_IP}${portPart}`,
       );
       wsRef.current = ws;
 
